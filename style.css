@@ -1,0 +1,59 @@
+* {outline: none;}
+
+body {
+    background-color: #e7e7e7;
+    color: #494949;
+}
+
+#wrapper, #footer {box-shadow: 0 0 .5rem #494949;}
+.desktop {display: block;}
+.mobile {display: none;}
+
+#footer {
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.nav-bg {background: linear-gradient(to bottom, rgba(73,73,73,1) 0%, rgba(51,51,51,1) 50%, rgba(73,73,73,1) 100%);}
+a, a:hover {color: #e7e7e7;}
+h3 {letter-spacing: .15rem;}
+h1, h3 {font-weight: lighter;}
+
+.rainbow {
+    color: transparent;
+    background: linear-gradient(90deg, orange , yellow, green, cyan, blue, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.content, #footer {padding: 1rem 2rem 0;}
+.green-accent {color: #3a9e20;}
+
+.content h5::after {
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: .05rem solid #a7302d;
+}
+
+.red-hover:hover, .red-hover #active {background: linear-gradient(rgba(167,47,45,1) 0%, rgba(102,28,28,1) 50%, rgba(167,47,45,1) 100%);}
+.green-hover:hover, .green-hover #active {background: linear-gradient(rgba(57,157,32,1) 0%, rgba(38,102,22,1) 50%, rgba(57,157,32,1) 100%);}
+.orange-hover:hover, .orange-hover #active {background: linear-gradient(rgba(228,160,65,1) 0%, rgba(153,106,44,1) 50%, rgba(228,160,65,1) 100%);}
+
+@media (max-width: 767px) {
+    #html-container {
+        overflow: hidden;
+        padding: 0;
+    }
+    #wrapper, #footer {font-size: .75rem;}
+    .desktop {display: none;}
+    .mobile {display: block;}
+    h1 {font-size: 1.75rem;}
+    h3 {
+        font-size: 1.25rem;
+        letter-spacing: .1rem;
+    }
+    h5 {font-size: 1rem;}
+    h1, h3 {padding-left: .25rem;}
+}
