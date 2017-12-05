@@ -30,11 +30,9 @@ h1, h3 {font-weight: lighter;}
 .content, #footer {padding: 1rem 2rem 0;}
 .green-accent {color: #3a9e20;}
 
-.content h5::after {
-    display: block;
-    content: '';
-    width: 100%;
-    border-bottom: .05rem solid #a7302d;
+.content hr {
+    border-color: #a7302d;
+    margin: .5rem auto;
 }
 
 .red-hover:hover, .red-hover #active {background: linear-gradient(rgba(167,47,45,1) 0%, rgba(102,28,28,1) 50%, rgba(167,47,45,1) 100%);}
